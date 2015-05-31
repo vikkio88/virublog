@@ -1,0 +1,66 @@
+virublog Flat_CMS
+by vikkio88 <vikkio88@yahoo.it>
+a flatCMS with a powerfull and light client written in ruby!
+
+TODO:
+
+Before start posting on your flat CMS, you must follow this simple HowTo step by step:
+
+1. Make sure you have your brain connected to other body parts
+2. Make sure you have ruby installed
+3. Make sure you have a webspace with php5 support
+4. Make sure you have something to do with virublog, or you make Jesus to cry!
+
+Ok...
+Now for use virublog cms you must edit install.php file on ./virublogOnline dir:
+
+you must edit this 3 variables
+		$password= "adminpassword";
+		$titolo="Virublog's Engine!";
+		$cssfilename= "default.css";
+
+$password =>		
+	the first variable contain your cms admin password never forget it! ( if you forget, no problem you can gain it by ftp connection after..)
+$titolo =>
+	the second contain the cms title, that appears on div id=header of all pages in cms
+$cssfilename =>
+	contain the css that you use in this blog, go search for other css in the ./virublogOnline/grafica dir for gain other css file name!
+
+after you have edited this 3 variables, you must up all the ./virublogOnline dir on your site (in / directory on in /blog directory...is the same)
+Make sure all the directory of online virublog has got writing permission (>=664)
+
+When you finished to up (via ftp) all virublogonline files you must run install.php script, http://yoursite.it/directory/install.php and now, after this virublogOnline can work!
+
+when you have upped all files enter the client dir ./virublog-client and run the configclient.rb script (ruby configclient.rb)
+
+After this configuration your cms is ready to be used!
+
+enter the directory where is virublogclient.rb script and type:
+$ ruby virublogclient.rb
+
+and post, or do something you want....
+
+For bugtracking (i know there are a lot of bugs...) send an email to: virublog@rocketmail.com !
+visit:
+http://virublog.altervista.org
+http://vikkio88.altervista.org
+for more information!
+Bye!!!
+
+
+p.s. For linux users...if you want a quick bin that help you to post quickly by a shell command you can write your own follow this schema
+
+#!/bin/bash
+cd path/where/client/is_installed/
+ruby virublogclient.rb
+
+save this file as virublog-client
+
+$ chmod 777 virublog-client
+$ mv virublog-client /usr/local/bin
+
+and now you have your virublog-client command on your shell :D
+
+Bye!
+vikkio88 
+11/05/2010

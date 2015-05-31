@@ -1,0 +1,65 @@
+virublog Flat_CMS
+by vikkio88 <vikkio88@yahoo.it>
+un flatCMS con un potente client scritto in ruby!
+
+DaFare:
+
+Prima di cominciare a postare con virublog devi seguire questa semplice guida passo-passo:
+
+1. Controlla che hai tutto il corpo connesso col cervello (F-fatto?)
+2. Controlla di aver installato ruby correttamente (versione >=1.8)
+3. Controlla di avere a disposizione un webspace con php5
+4. Controlla di avere qualcosa da fare con virublog, o Gesù piange! :'(
+
+Ok...
+Per usare virublog devi editare il file install.php nella directory ./virublogOnline :
+
+Devi editare queste tre variabili:
+		$password= "adminpassword";
+		$titolo="Virublog's Engine!";
+		$cssfilename= "default.css";
+
+$password =>		
+	la prima variabile contiene la tua password di admin, non dimenticarla (ma se la dimentichi non ti preoccupare puoi sempre recuperarla tramite FTP)
+$titolo =>
+	la seconda variabile contiene il titolo del blog, comparira in ogni pagina provvista del div #header
+$cssfilename =>
+	contiene il nome del file css che userai come template per tutto il cms (nella dir ./virublogOnline/grafica/css/ trovi gli altri scegline uno esistente oppure il sito sara un brutta pagina bianca!
+
+Dopo aver editato ad-hoc queste tre variabili, devi uppare sul tuo webspace tutti file nella directory ./virublogOnline (nella directory "/" o in "/blog" dove ti viene meglio...non importa)
+Assicurati che tutte le directory dell'engine online virublog abbiano i permessi di scrittura (>=664)
+
+Quando avrai finito di uppare tutti i files devi avviare lo script install.php, http://tuosito.it/directory/install.php e virublog online sarà installato
+Adesso apri la directory ./virublog-client qua in locale e avvia lo script configclient.rb (ruby configclient.rb)
+
+Bene adesso nella cartella virublog-client hai un client configurato, pronto a farti postare!
+
+Entra nella directory e digita:
+$ ruby virublogclient.rb
+
+e posta...o fai quello che vuoi
+
+For bugtracking (i know there are a lot of bugs...) send an email to: virublog@rocketmail.com !
+visit:
+http://virublog.altervista.org
+http://vikkio88.altervista.org
+for more information!
+Bye!!!
+
+
+p.s. For linux users...se volete un comando veloce da shell per postare su virublog, cosa che per me è molto comoda, utilizzate questo piccolo script in bash che ho creato
+
+#!/bin/bash
+cd path/where/client/is_installed/
+ruby virublogclient.rb
+
+salva questo file come virublog-client
+
+$ chmod 777 virublog-client
+$ mv virublog-client /usr/local/bin
+
+e adesso puoi usarlo da shell $ virublog-client
+
+Bye!
+vikkio88 
+19/05/2010

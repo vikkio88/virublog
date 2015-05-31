@@ -1,0 +1,1 @@
+<div id="footer">powered by <a href="http://virublog.altervista.org/"><img src="http://virublog.altervista.org/antipixel.png" alt="virublog" /></a> copyleft2010 by <a href="http://vikkio88.altervista.org/" title="vikkiomain">vikkio88</a></div>

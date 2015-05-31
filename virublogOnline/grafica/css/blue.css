@@ -1,0 +1,198 @@
+/*
+  ViRu_Blog Default Style
+*/
+
+* body {
+	padding: 0px;
+	color: #000;
+	margin: 0;
+	background: #c0deed url(../img/bg-clouds.png) repeat-x;
+
+}
+
+body, li, td, div {
+	font: 11px Verdana, Arial, sans-serif;
+}
+
+/*
+Il template è a larghezza fissa a 780px  perchè  mi  pareva  che  fosse  un
+pochino più bloggoidale.
+
+Dove adesso hai soltanto l'h1 del titolo ho inserito un id=header per avere
+anche l'immagine di sfondo
+*/
+#header {
+  width: 780px;
+  height: 140px;
+  margin: 0px auto;
+  background-color: #c4c4c4;
+  background-image: url(../img/bluehead.png);
+}
+
+#header h1 {
+  font-size: 35px;
+  color: #822222;/*#e3e3e3;*/
+  padding: 45px 10px
+}
+
+/*
+Segue una serie di tre div con id pagebody (il tuo), left e right.
+Con i due nuovi div risulta più semplice sia la modifica degli spazi che il
+passaggio a layout più fluidi
+*/
+#pagebody {
+  width: 778px;
+  margin: 0px auto;
+  background: white;
+  border-left: solid #aeabab 1px;
+  border-right: solid #aeabab 1px;
+}
+#left_side {
+  width: 572px;
+  padding-right: 2px; /* 4px tra i due *_side */
+  float: left;
+  padding: 2px;
+}
+#right_side {
+  width: 194px;
+  padding-left: 2px;
+  padding-right: 4px;
+  float: right
+}
+
+/* Contenuto di left_side con il testo del blog (menu_title è spiegato 
+sotto) */
+div.post {
+  padding-left: 4px;
+  padding-bottom: 10px;
+	margin-top: 4px
+}
+div.posttop, div.menu_title {
+  height: 19px;
+	padding: 4px;
+	background-color: #650005;
+	color: #822222;
+	background: url(../img/bordino.png) repeat-x left top
+}
+div.posttop {
+  margin-bottom: 10px
+}
+div.title {
+	font-weight: bold;
+	width: auto;
+	float: left;
+	padding-right: 10px     /* togliamo &nbsp; dall'html di 'date' */
+}
+div.date {
+  /* non serve a un cazzo... */     
+}
+div.posttop a:link, div.posttop a:visited, div.posttop a:active, div.posttop a:hover {
+  color: #822222
+}
+
+/* Contenuto di right_side con il menu
+navigatore è diventato un ul; è stato aggiunto menu_title che usa anche i
+criteri di posttop come indicato sopra */
+div.menu_title {
+	margin-top: 4px
+}
+ul.navigatore {
+  margin: 0px 0px 10px 0px;
+  padding-left: 4px;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #aeabab;
+  text-align: left;
+}
+ul.navigatore li {
+	list-style: none;
+	line-height: 2.1
+}
+
+/* destra...che era bruttino */
+div.destra {
+	text-align: right;
+	padding: 15px 0px 10px 0px;
+}
+
+/*
+footer inserito in pagebody in clear both
+*/
+#footer {
+	border-top: 1px solid #650005;
+	padding: 4px;
+	text-align: right;
+  clear: both
+}
+
+/* Valori complessivi */
+a:link, a:visited, a:active, a:hover {
+  text-decoration: underline;
+  color: #650005
+}
+
+/* Questa parte l'ho tenuta uguale anche se forse non serve... */
+p.largefont {
+	text-align: left;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+div.pda {
+	float: right;
+	background: #F9F9F9;
+	border-left: 1px solid silver;
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver;
+	padding: 4px;
+}
+
+
+
+
+div.posttext {
+
+  border: 1px solid green;
+
+	padding: 4px;
+	background: #F9F9F9;
+}
+
+
+
+.codice {
+	border: dashed 2px #FFF;
+	margin-left: 30px;
+	width: 580px;
+	font-style: italic;
+	background-color: #E6E6FA;
+	color: #000;
+	padding: 5px;
+}
+
+.destra ul li{
+	list-style: none;
+	display: inline;
+}
+
+.sinistra {
+	border-top: solid 1px silver;
+	padding: 0.1px;
+	font-size: 0.9em;
+	text-align: left;
+}
+
+.sinistra ul li{
+	list-style: none;
+	display: inline;
+}
+
+div.code{
+	border: 1px solid #000;
+	background-color: #F5F5F5;
+	color: #000;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+/* EOF */
